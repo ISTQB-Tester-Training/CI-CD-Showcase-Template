@@ -31,13 +31,13 @@ pipeline {
         stage('Deploy to local Repository') {
             steps {
 
-                sh "mvn package deploy -DskipTests"
+                sh "mvn package -DskipTests"
             }
         }
         stage('Deploy to Remote Repository') {
             steps {
 
-                sh "mvn package org.sonatype.plugins:nexus-staging-maven-plugin:deploy -DskipTests"
+                sh "mvn deploy -DskipTests"
             }
         }
     }
