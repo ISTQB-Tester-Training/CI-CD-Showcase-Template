@@ -5,8 +5,6 @@ import java.time.temporal.ChronoUnit;
 
 public class TimePair {
 
-    public TimePair() {}
-
     public double getTimeDifference(String startTime, String endTime) {
 
         try { LocalTime.parse(startTime);

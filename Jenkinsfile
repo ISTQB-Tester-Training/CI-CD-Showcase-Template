@@ -2,18 +2,12 @@ pipeline {
     agent any
 
     stages {
-        stage('Build') {
+        stage('Compile') {
             steps {
 
                 git 'https://github.com/ISTQB-Tester-Training/CI-CD-Showcase-Template.git'
 
                 sh "mvn compile"
-            }
-        }
-        stage('Compile') {
-            steps {
-
-               sh "mvn compile"
             }
         }
         stage('Unit Test TDD') {
@@ -32,6 +26,18 @@ pipeline {
             steps {
 
                sh "mvn compile"
+            }
+        }
+        stage('Deploy to local Repository') {
+            steps {
+
+                sh "mvn package deploy -DskipTests"
+            }
+        }
+        stage('Deploy to Remote Repository') {
+            steps {
+
+                sh "mvn package org.sonatype.plugins:nexus-staging-maven-plugin:deploy -DskipTests"
             }
         }
     }

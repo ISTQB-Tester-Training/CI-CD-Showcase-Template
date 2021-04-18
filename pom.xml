@@ -106,6 +106,57 @@
                 </plugins>
             </build>
         </profile>
+
+        <profile>
+            <id>ctp-nexus-release-profile</id>
+            <build>
+                <plugins>
+                    <plugin>
+                        <groupId>org.sonatype.plugins</groupId>
+                        <artifactId>nexus-staging-maven-plugin</artifactId>
+                        <version>1.6.8</version>
+                        <executions>
+                            <execution>
+                                <id>default-deploy</id>
+                                <phase>deploy</phase>
+                                <goals>
+                                    <goal>deploy</goal>
+                                </goals>
+                            </execution>
+                        </executions>
+                        <configuration>
+                            <serverId>ctp-nexus-release</serverId>
+                            <nexusUrl>http://ctp-tester-training.tk:30003/repository/maven-test-repository-release</nexusUrl>
+                            <skipStaging>true</skipStaging>
+                        </configuration>
+                    </plugin>
+                </plugins>
+            </build>
+        </profile>
+
     </profiles>
+
+    <scm>
+        <!--suppress UnresolvedMavenProperty -->
+        <connection>scm:git:https://${env.GITHUB_TOKEN}@github.com/ISTQB-Tester-Training/Nexus-Deploy-Release-Test.git</connection>
+        <!--suppress UnresolvedMavenProperty -->
+        <url>https://${env.GITHUB_TOKEN}@github.com/ISTQB-Tester-Training/Nexus-Deploy-Release-Test</url>
+        <!--suppress UnresolvedMavenProperty -->
+        <developerConnection>scm:git:https://${env.GITHUB_TOKEN}@github.com/ISTQB-Tester-Training/Nexus-Deploy-Release-Test.git</developerConnection>
+    </scm>
+
+    <distributionManagement>
+
+    <snapshotRepository>
+        <id>ctp-nexus-snapshot</id>
+        <url>http://ctp-tester-training.tk:30003/repository/maven-test-repository-snapshot</url>
+    </snapshotRepository>
+
+    <repository>
+        <id>ctp-nexus-release</id>
+        <url>http://ctp-tester-training.tk:30003/repository/maven-test-repository-release</url>
+    </repository>
+
+    </distributionManagement>
 
 </project>
