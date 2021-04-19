@@ -6,7 +6,7 @@
 
     <groupId>com.testertraining</groupId>
     <artifactId>CI-CD-Showcase-Template</artifactId>
-    <version>1.1</version>
+    <version>1.0-SNAPSHOT</version>
     <packaging>jar</packaging>
 
     <properties>
@@ -108,25 +108,16 @@
 
     </profiles>
 
-    <scm>
-        <!--suppress UnresolvedMavenProperty -->
-        <connection>scm:git:https://${env.GITHUB_TOKEN}@github.com/ISTQB-Tester-Training/Nexus-Deploy-Release-Test.git</connection>
-        <!--suppress UnresolvedMavenProperty -->
-        <url>https://${env.GITHUB_TOKEN}@github.com/ISTQB-Tester-Training/Nexus-Deploy-Release-Test</url>
-        <!--suppress UnresolvedMavenProperty -->
-        <developerConnection>scm:git:https://${env.GITHUB_TOKEN}@github.com/ISTQB-Tester-Training/Nexus-Deploy-Release-Test.git</developerConnection>
-    </scm>
-
     <distributionManagement>
 
     <snapshotRepository>
         <id>ctp-nexus-snapshot</id>
-        <url>http://ctp-tester-training.tk:30003/repository/maven-test-repository-snapshot</url>
+        <url>http://ctp-tester-training.tk:30003/repository/maven-CI-Showcase-Repository-Snapshot</url>
     </snapshotRepository>
 
     <repository>
         <id>ctp-nexus-release</id>
-        <url>http://ctp-tester-training.tk:30003/repository/maven-test-repository-release</url>
+        <url>http://ctp-tester-training.tk:30003/repository/maven-CI-Showcase-Repository-Release</url>
     </repository>
 
     </distributionManagement>
