@@ -28,7 +28,7 @@ pipeline {
                sh "mvn compile"
             }
         }
-        stage('Deploy to local Repository') {
+        stage('Deploy to Local Repository') {
             steps {
 
                 sh "mvn package -DskipTests"

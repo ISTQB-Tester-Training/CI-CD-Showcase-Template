@@ -3,9 +3,6 @@ package bddshowcasepackage;
 import io.cucumber.java.de.Angenommen;
 import io.cucumber.java.de.Wenn;
 import io.cucumber.java.de.Dann;
-import org.junit.experimental.categories.Categories;
-import org.junit.experimental.categories.Category;
-import tddshowcasetestpackage.UnitTest;
 
 import static org.junit.Assert.*;
 
