@@ -10,7 +10,7 @@ pipeline {
                 sh "mvn compile"
             }
         }
-        stage('Unit Test TDD') {
+        stage('Unit Tests TDD') {
             steps {
 
                 sh "mvn test -P TDD"
