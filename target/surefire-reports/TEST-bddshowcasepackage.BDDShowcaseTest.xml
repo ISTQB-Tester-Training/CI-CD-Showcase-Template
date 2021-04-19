@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite tests="7" failures="0" name="bddshowcasepackage.BDDShowcaseTest" time="0.607" errors="0" skipped="0">
+<testsuite tests="7" failures="0" name="bddshowcasepackage.BDDShowcaseTest" time="0.612" errors="0" skipped="0">
   <properties>
     <property name="idea.version" value="2020.3.3"/>
     <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
@@ -44,7 +44,7 @@
     <property name="java.class.path" value="C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2019.2.2\plugins\maven\lib\maven3\boot\plexus-classworlds-2.6.0.jar;C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2019.2.2\plugins\maven\lib\maven3\boot\plexus-classworlds.license"/>
     <property name="java.vm.specification.version" value="15"/>
     <property name="sun.arch.data.model" value="64"/>
-    <property name="sun.java.command" value="org.codehaus.classworlds.Launcher -Didea.version=2020.3.3 deploy"/>
+    <property name="sun.java.command" value="org.codehaus.classworlds.Launcher -Didea.version=2020.3.3 package"/>
     <property name="java.home" value="C:\Program Files (x86)\Java\jdk-15.0.2"/>
     <property name="user.language" value="en"/>
     <property name="java.specification.vendor" value="Oracle Corporation"/>
@@ -59,11 +59,11 @@
     <property name="sun.cpu.endian" value="little"/>
     <property name="sun.cpu.isalist" value="amd64"/>
   </properties>
-  <testcase classname="Erfassen von Arbeitszeiten im System" name="Berechnung der gesetzlich vorgeschriebenen Pausenzeiten #1" time="0.473"/>
-  <testcase classname="Erfassen von Arbeitszeiten im System" name="Berechnung der gesetzlich vorgeschriebenen Pausenzeiten #2" time="0.065"/>
+  <testcase classname="Erfassen von Arbeitszeiten im System" name="Berechnung der gesetzlich vorgeschriebenen Pausenzeiten #1" time="0.455"/>
+  <testcase classname="Erfassen von Arbeitszeiten im System" name="Berechnung der gesetzlich vorgeschriebenen Pausenzeiten #2" time="0.035"/>
   <testcase classname="Erfassen von Arbeitszeiten im System" name="Berechnung der gesetzlich vorgeschriebenen Pausenzeiten #3" time="0"/>
-  <testcase classname="Erfassen von Arbeitszeiten im System" name="Berechnung der gesetzlich vorgeschriebenen Pausenzeiten #4" time="0"/>
-  <testcase classname="Erfassen von Arbeitszeiten im System" name="Berechnung der gesetzlich vorgeschriebenen Pausenzeiten #5" time="0.055"/>
-  <testcase classname="Erfassen von Arbeitszeiten im System" name="Berechnung der gesetzlich vorgeschriebenen Pausenzeiten #6" time="0.003"/>
-  <testcase classname="Erfassen von Arbeitszeiten im System" name="Berechnung der gesetzlich vorgeschriebenen Pausenzeiten #7" time="0.011"/>
+  <testcase classname="Erfassen von Arbeitszeiten im System" name="Berechnung der gesetzlich vorgeschriebenen Pausenzeiten #4" time="0.035"/>
+  <testcase classname="Erfassen von Arbeitszeiten im System" name="Berechnung der gesetzlich vorgeschriebenen Pausenzeiten #5" time="0"/>
+  <testcase classname="Erfassen von Arbeitszeiten im System" name="Berechnung der gesetzlich vorgeschriebenen Pausenzeiten #6" time="0.087"/>
+  <testcase classname="Erfassen von Arbeitszeiten im System" name="Berechnung der gesetzlich vorgeschriebenen Pausenzeiten #7" time="0"/>
 </testsuite>
