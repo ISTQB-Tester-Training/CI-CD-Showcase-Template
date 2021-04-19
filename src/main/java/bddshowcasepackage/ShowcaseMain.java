@@ -2,12 +2,12 @@ package bddshowcasepackage;
 
 import tddshowcasepackage.TimePair;
 
+import java.io.IOException;
 import java.util.Scanner;
 
 public class ShowcaseMain {
 
-    public static void main( String[] args )
-    {
+    public static void main( String[] args ) throws IOException {
         System.out.println("##################################################");
         System.out.println("#                                                #");
         System.out.println("# ISTQB Advanced Level Agile Technical Tester    #");
@@ -16,9 +16,9 @@ public class ShowcaseMain {
         System.out.println("##################################################");
         ShowcaseMain aShowcaseMain = new ShowcaseMain();
         System.out.println("Version: " +
-                            aShowcaseMain.getClass().getPackage().getSpecificationTitle() +
+                            aShowcaseMain.getClass().getPackage().getSpecificationVersion() +
                             " /" +
-                            aShowcaseMain.getClass().getPackage().getImplementationTitle());
+                            aShowcaseMain.getClass().getPackage().getImplementationVersion());
 
         String startTime, endTime;
 
