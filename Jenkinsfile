@@ -25,7 +25,7 @@ pipeline {
         stage('Behavior Tests BDD') {
             steps {
 
-               sh "mvn compile"
+               sh "mvn test -P BDD"
             }
         }
         stage('Deploy to Local Repository') {
