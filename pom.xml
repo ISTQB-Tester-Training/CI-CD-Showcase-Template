@@ -6,7 +6,7 @@
 
     <groupId>com.testertraining</groupId>
     <artifactId>CI-CD-Showcase-Template</artifactId>
-    <version>1.5</version>
+    <version>1.5-SNAPSHOT</version>
     <packaging>jar</packaging>
 
     <properties>
@@ -80,6 +80,12 @@
                 <configuration>
                     <archive>
                         <manifest>
+                            <addDefaultImplementationEntries>
+                                true
+                            </addDefaultImplementationEntries>
+                            <addDefaultSpecificationEntries>
+                                true
+                            </addDefaultSpecificationEntries>
                             <mainClass>
                                 bddshowcasepackage.ShowcaseMain
                             </mainClass>

@@ -10,13 +10,13 @@ public class TimePair {
         try { LocalTime.parse(startTime);
         }
         catch (Exception e) {
-            throw new TimePairException(e.getMessage() + "(Input value: " + startTime + ")", 501);
+            throw new TimePairException(e.getMessage() + " (Input value: " + startTime + ")", 501);
         }
 
         try { LocalTime.parse(endTime);
         }
         catch (Exception e) {
-            throw new TimePairException(e.getMessage() + "(Input value: " + endTime + ")", 502);
+            throw new TimePairException(e.getMessage() + " (Input value: " + endTime + ")", 502);
         }
 
         double aTimeDifference = LocalTime.parse(startTime).until(LocalTime.parse(endTime), ChronoUnit.MINUTES)/60.0;
